@@ -1,6 +1,6 @@
+
 create database Miniproyecto
 use Miniproyecto
-
 
 create table Users(
 Id int Identity(1,1 )not null primary key , 
@@ -25,3 +25,4 @@ FOREIGN KEY (CategoryId) REFERENCES Category(Id)
 )
 
 insert into Users values('sa','uts',1);
+
