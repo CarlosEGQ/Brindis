@@ -1,0 +1,9 @@
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Miniproyecto.exe.config
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Miniproyecto.exe
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Miniproyecto.pdb
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.csprojAssemblyReference.cache
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Properties.Resources.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.csproj.GenerateResource.cache
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.csproj.CoreCompileInputs.cache
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.exe
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.pdb
