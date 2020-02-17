@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,16 @@ namespace Miniproyecto
 		[STAThread]
 		static void Main()
 		{
+			GlobalUser = new Users();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Menu());
+			Application.Run(new Login());
+		}
+		private static Users _User;
+		public static Users GlobalUser
+		{
+			get { return _User; }
+			set { _User = value; }
 		}
 	}
 }

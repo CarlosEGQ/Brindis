@@ -16,5 +16,13 @@ namespace Miniproyecto
         {
             InitializeComponent();
         }
+
+        private void Crud_Usuario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Mensaje, Segurx de Cerrar?", "Alerta!!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
