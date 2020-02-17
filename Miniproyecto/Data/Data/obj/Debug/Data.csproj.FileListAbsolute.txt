@@ -9,3 +9,15 @@ C:\Users\Helena\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csprojAsse
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.dll
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.pdb
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.dll.config
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.dll
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.pdb
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.dll
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.xml
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.dll
+C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.pdb
