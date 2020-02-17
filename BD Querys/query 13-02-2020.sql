@@ -1,6 +1,6 @@
 
-create database Miniproyecto
-use Miniproyecto
+create database MiniproyectoEntities
+use MiniproyectoEntities
 
 create table Users(
 Id int Identity(1,1 )not null primary key , 
