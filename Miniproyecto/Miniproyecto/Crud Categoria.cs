@@ -20,14 +20,6 @@ namespace Miniproyecto
             InitializeComponent();
         }
 
-        private void Crud_Categoria_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (MessageBox.Show("Mensaje, Segurx de Cerrar?", "Alerta!!", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
         private void Crud_Categoria_Load(object sender, EventArgs e)
         {
             gridLoad();
@@ -117,6 +109,8 @@ namespace Miniproyecto
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            if (txtClave.Text.Trim() == "")
+                return;
             category = GetCategory(Convert.ToInt32(txtClave.Text));
             try
             {

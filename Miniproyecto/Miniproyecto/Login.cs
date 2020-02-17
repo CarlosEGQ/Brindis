@@ -58,10 +58,10 @@ namespace Miniproyecto
                 }
                 Program.GlobalUser = user;
                 MessageBox.Show("Bienvenidx " + user.Nickname);
-                Crud_Categoria crud_Categoria = new Crud_Categoria();
+                Visualizacion visualizacion = new Visualizacion();
                 Cursor.Current = Cursors.Default;
                 this.Hide();
-                crud_Categoria.ShowDialog();
+                visualizacion.ShowDialog();
             }
             catch (Exception ex)
             {

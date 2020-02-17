@@ -27,3 +27,4 @@ C:\Users\Helena\Desktop\Brindis\Miniproyecto\Miniproyecto\bin\Debug\EntityFramew
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.CRUD_Cliente.resources
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Crud_Categoria.resources
 C:\Users\Helena\Desktop\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Crud_Usuario.resources
+C:\Users\Helena\Desktop\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Visualizacion.resources

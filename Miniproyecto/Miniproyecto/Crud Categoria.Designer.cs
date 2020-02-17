@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryGrid = new System.Windows.Forms.DataGridView();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
@@ -57,7 +58,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(364, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(370, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -99,7 +100,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtClave);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(362, 74);
             this.panel1.TabIndex = 2;
@@ -143,14 +144,13 @@
             // 
             this.CategoryGrid.AllowUserToAddRows = false;
             this.CategoryGrid.AllowUserToDeleteRows = false;
-            this.CategoryGrid.AllowUserToOrderColumns = true;
             this.CategoryGrid.AutoGenerateColumns = false;
             this.CategoryGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CategoryGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Clave,
             this.Descripcion});
             this.CategoryGrid.DataSource = this.categoryBindingSource;
-            this.CategoryGrid.Location = new System.Drawing.Point(0, 108);
+            this.CategoryGrid.Location = new System.Drawing.Point(0, 150);
             this.CategoryGrid.MultiSelect = false;
             this.CategoryGrid.Name = "CategoryGrid";
             this.CategoryGrid.ReadOnly = true;
@@ -162,6 +162,16 @@
             // categoryBindingSource
             // 
             this.categoryBindingSource.DataSource = typeof(Data.Category);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(90, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 33);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Categorias";
             // 
             // Clave
             // 
@@ -182,13 +192,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 338);
+            this.ClientSize = new System.Drawing.Size(370, 389);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.CategoryGrid);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Crud_Categoria";
             this.Text = "Administrar Categorias";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Crud_Categoria_FormClosed);
             this.Load += new System.EventHandler(this.Crud_Categoria_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -214,6 +225,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView CategoryGrid;
         private System.Windows.Forms.BindingSource categoryBindingSource;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
     }
