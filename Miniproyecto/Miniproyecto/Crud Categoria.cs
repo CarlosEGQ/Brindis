@@ -81,15 +81,34 @@ namespace Miniproyecto
             }
             try
             {
-                category = new Category();
-                category.Id = Convert.ToInt32(txtClave.Text);
-                category.Description = txtDes.Text;
-                BD.Category.Add(category);
-                BD.SaveChanges();
-                MessageBox.Show("Categoria guardado exitosamente");
-                txtClave.Enabled = true;
-                gridLoad();
-                clean();
+				if (!txtClave.Enabled)
+				{
+					category = GetCategory(Convert.ToInt32(txtClave.Text));
+					if (category == null)
+					{
+						MessageBox.Show("Ocurrio un fallo");
+						return;
+					}
+					category.Description = txtDes.Text;
+					//BD.Category.Add(category);
+					BD.SaveChanges();
+					MessageBox.Show("Categoria guardado exitosamente");
+					txtClave.Enabled = true;
+					gridLoad();
+					clean();
+				}
+				else
+				{
+					category = new Category();
+					category.Id = Convert.ToInt32(txtClave.Text);
+					category.Description = txtDes.Text;
+					BD.Category.Add(category);
+					BD.SaveChanges();
+					MessageBox.Show("Categoria guardado exitosamente");
+					txtClave.Enabled = true;
+					gridLoad();
+					clean();
+				}
             }
             catch (Exception ex)
             {

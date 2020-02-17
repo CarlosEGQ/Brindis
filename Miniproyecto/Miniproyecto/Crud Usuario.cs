@@ -26,7 +26,18 @@ namespace Miniproyecto
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtClave.Text.Trim() == "")
+
+			user = GetUser(Convert.ToInt32(txtClave.Text));
+
+			if (user != null)
+			{
+				if (user.Id == Program.GlobalUser.Id && opNormal.Checked == true)
+				{
+					MessageBox.Show("No te puedes dejar de ser administrador", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+					return;
+				}
+			}
+			if (txtClave.Text.Trim() == "")
             {
                 MessageBox.Show("Favor de especificar clave");
                 txtClave.Focus();
@@ -60,27 +71,42 @@ namespace Miniproyecto
                 MessageBox.Show("Las contraseñas no coinciden");
                 return;
             }
-            try
+			try
             {
-                user = new Users();
-                user.Id = Convert.ToInt32(txtClave.Text);
-                user.Nickname = txtNombre.Text;
-                user.Password = txtPassword.Text;
-                if (opAdmin.Checked == true)
-                    user.Rol = 1;
-                else
-                    user.Rol = 2;
-                BD.Users.Add(user);
-                BD.SaveChanges();
-                MessageBox.Show("Usuario guardado exitosamente");
-                txtClave.Enabled = true;
-                GridLoad();
-                Clean();
+				if (!txtClave.Enabled)
+				{
+					user.Nickname = txtNombre.Text;
+					user.Password = txtPassword.Text;
+					BD.Users.Add(user);
+					BD.SaveChanges();
+					MessageBox.Show("Usuario guardado exitosamente");
+					txtClave.Enabled = true;
+					GridLoad();
+					Clean();
+				}
+				else
+				{
+					user = new Users();
+					user.Id = Convert.ToInt32(txtClave.Text);
+					user.Nickname = txtNombre.Text;
+					user.Password = txtPassword.Text;
+					if (opAdmin.Checked == true)
+						user.Rol = 1;
+					else
+						user.Rol = 2;
+					BD.Users.Add(user);
+					BD.SaveChanges();
+					MessageBox.Show("Usuario guardado exitosamente");
+					txtClave.Enabled = true;
+					GridLoad();
+					Clean();
+				}
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ha ocurrido el siguente error" + ex.ToString());
             }
+			txtClave.Enabled = true;
         }
 
         private void Crud_Usuario_Load(object sender, EventArgs e)
@@ -103,7 +129,7 @@ namespace Miniproyecto
             txtPassword.Text = "";
             txtPassword2.Text = "";
             opAdmin.Checked = false;
-            opNormal.Checked = false;
+            opNormal.Checked = false;     
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -114,9 +140,11 @@ namespace Miniproyecto
             user = GetUser(Convert.ToInt32(txtClave.Text));
             if(user.Id == Program.GlobalUser.Id)
             {
+
                 MessageBox.Show("No te puedes elminiar a ti mismo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
             try
             {
                 BD.Users.Remove(user);
@@ -131,6 +159,7 @@ namespace Miniproyecto
                 MessageBox.Show("Ha ocurrido el siguiente error" + ex.ToString(), "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
+			txtClave.Enabled = true;
         }
 
         private void txtClave_Leave(object sender, EventArgs e)
@@ -147,6 +176,7 @@ namespace Miniproyecto
                     opAdmin.Checked = true;
                 else
                     opNormal.Checked = true;
+				txtClave.Enabled = false;
             }
         }
 
