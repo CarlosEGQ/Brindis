@@ -26,5 +26,10 @@ namespace Miniproyecto
 			get { return _User; }
 			set { _User = value; }
 		}
-	}
+        public static Clients GlobalClient
+        {
+            get { return _Client; }
+            set { _User = value; }
+        }
+    }
 }
