@@ -21,6 +21,7 @@ namespace Miniproyecto
 			Application.Run(new Login());
 		}
 		private static Users _User;
+		private static Clients _client;
 		public static Users GlobalUser
 		{
 			get { return _User; }
@@ -28,8 +29,8 @@ namespace Miniproyecto
 		}
         public static Clients GlobalClient
         {
-            get { return _Client; }
-            set { _User = value; }
+            get { return _client; }
+            set { _client = value; }
         }
     }
 }

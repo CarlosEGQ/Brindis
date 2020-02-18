@@ -39,9 +39,10 @@
             // 
             // pControl
             // 
+            this.pControl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pControl.Location = new System.Drawing.Point(1, 28);
             this.pControl.Name = "pControl";
-            this.pControl.Size = new System.Drawing.Size(787, 421);
+            this.pControl.Size = new System.Drawing.Size(543, 481);
             this.pControl.TabIndex = 0;
             // 
             // toolStrip1
@@ -52,7 +53,7 @@
             this.btnUsers});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(791, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(544, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -74,6 +75,7 @@
             this.btnClients.Name = "btnClients";
             this.btnClients.Size = new System.Drawing.Size(169, 22);
             this.btnClients.Text = "Administrar Clientes";
+            this.btnClients.Click += new System.EventHandler(this.btnClients_Click);
             // 
             // btnUsers
             // 
@@ -89,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 450);
+            this.ClientSize = new System.Drawing.Size(544, 511);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pControl);
             this.Name = "Visualizacion";
