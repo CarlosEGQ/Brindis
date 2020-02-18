@@ -97,6 +97,7 @@
             this.ClientSize = new System.Drawing.Size(828, 485);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Visualizacion";
             this.Text = "Visualizacion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Visualizacion_FormClosed);
