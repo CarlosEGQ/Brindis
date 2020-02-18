@@ -21,3 +21,14 @@ C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj
 C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.dll
 C:\Users\multimedia\Desktop\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.pdb
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.dll.config
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.dll
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\Data.pdb
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.dll
+C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Data\Data\obj\Debug\Data.pdb

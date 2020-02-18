@@ -57,5 +57,20 @@ namespace Miniproyecto
                 this.btnClients.Visible = false;
             }
         }
+
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+            this.pControl.Controls.Clear();
+            CRUD_Cliente cRUD_Cliente = new CRUD_Cliente()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false,
+                TopMost = true
+            };
+            cRUD_Cliente.FormBorderStyle = FormBorderStyle.None;
+            this.pControl.Controls.Add(cRUD_Cliente);
+            cRUD_Cliente.Show();
+
+        }
     }
 }

@@ -117,6 +117,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Data.Category.datasource" />
+    <None Include="Properties\DataSources\Data.Clients.datasource" />
     <None Include="Properties\DataSources\Data.Users.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

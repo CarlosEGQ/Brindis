@@ -121,6 +121,7 @@ namespace Miniproyecto
         private void btnNew_Click(object sender, EventArgs e)
         {
             Clean();
+            txtClave.Enabled = true;
         }
         void Clean()
         {
