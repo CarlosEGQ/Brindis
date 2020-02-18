@@ -50,6 +50,7 @@ namespace Miniproyecto
         private void btnNew_Click(object sender, EventArgs e)
         {
             Clean();
+            txtID.Enabled = true;
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace Miniproyecto
                     BD.SaveChanges();
                     MessageBox.Show("Cliente guardado exitosamente");
                     txtID.Enabled = true;
-                    //GridLoad();
+                    GridLoad();
                     Clean();
                 }
                 else
@@ -110,7 +111,7 @@ namespace Miniproyecto
                     BD.SaveChanges();
                     MessageBox.Show("Cliente guardado exitosamente");
                     txtID.Enabled = true;
-                    //GridLoad();
+                    GridLoad();
                     Clean();
                 }
             }

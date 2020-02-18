@@ -40,20 +40,22 @@
             // pControl
             // 
             this.pControl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pControl.Location = new System.Drawing.Point(1, 28);
+            this.pControl.Location = new System.Drawing.Point(1, 34);
+            this.pControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pControl.Name = "pControl";
-            this.pControl.Size = new System.Drawing.Size(543, 481);
+            this.pControl.Size = new System.Drawing.Size(724, 520);
             this.pControl.TabIndex = 0;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnCategories,
             this.btnClients,
             this.btnUsers});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(544, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(740, 30);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -63,7 +65,7 @@
             this.btnCategories.Image = ((System.Drawing.Image)(resources.GetObject("btnCategories.Image")));
             this.btnCategories.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCategories.Name = "btnCategories";
-            this.btnCategories.Size = new System.Drawing.Size(190, 22);
+            this.btnCategories.Size = new System.Drawing.Size(235, 27);
             this.btnCategories.Text = "Administrar Categorias";
             this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click_1);
             // 
@@ -73,7 +75,7 @@
             this.btnClients.Image = ((System.Drawing.Image)(resources.GetObject("btnClients.Image")));
             this.btnClients.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClients.Name = "btnClients";
-            this.btnClients.Size = new System.Drawing.Size(169, 22);
+            this.btnClients.Size = new System.Drawing.Size(209, 27);
             this.btnClients.Text = "Administrar Clientes";
             this.btnClients.Click += new System.EventHandler(this.btnClients_Click);
             // 
@@ -83,17 +85,18 @@
             this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
             this.btnUsers.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(169, 22);
+            this.btnUsers.Size = new System.Drawing.Size(208, 27);
             this.btnUsers.Text = "Administar Usuarios";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // Visualizacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 511);
+            this.ClientSize = new System.Drawing.Size(740, 597);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pControl);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Visualizacion";
             this.Text = "Visualizacion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Visualizacion_FormClosed);
