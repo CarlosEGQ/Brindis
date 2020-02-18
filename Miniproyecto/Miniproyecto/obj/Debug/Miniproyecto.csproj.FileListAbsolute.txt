@@ -71,3 +71,16 @@ C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Minipr
 C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.csproj.CopyComplete
 C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.exe
 C:\Users\Carlos\Documents\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.pdb
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Data.dll
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\EntityFramework.dll
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Data.pdb
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\Data.dll.config
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\EntityFramework.xml
+C:\Git\Brindis\Miniproyecto\Miniproyecto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Crud_Categoria.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Crud_Usuario.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.CRUD_Cliente.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Login.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.Visualizacion.resources
+C:\Git\Brindis\Miniproyecto\Miniproyecto\obj\Debug\Miniproyecto.csproj.CopyComplete
