@@ -48,12 +48,12 @@
 			this.txtClave = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.Grid = new System.Windows.Forms.DataGridView();
+			this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.label6 = new System.Windows.Forms.Label();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nicknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.rolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.label6 = new System.Windows.Forms.Label();
 			this.toolStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -250,34 +250,6 @@
 			this.Grid.Size = new System.Drawing.Size(437, 154);
 			this.Grid.TabIndex = 3;
 			// 
-			// idDataGridViewTextBoxColumn
-			// 
-			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-			this.idDataGridViewTextBoxColumn.ReadOnly = true;
-			// 
-			// nicknameDataGridViewTextBoxColumn
-			// 
-			this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
-			this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
-			this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
-			this.nicknameDataGridViewTextBoxColumn.ReadOnly = true;
-			// 
-			// passwordDataGridViewTextBoxColumn
-			// 
-			this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-			this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-			this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-			this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
-			// 
-			// rolDataGridViewTextBoxColumn
-			// 
-			this.rolDataGridViewTextBoxColumn.DataPropertyName = "Rol";
-			this.rolDataGridViewTextBoxColumn.HeaderText = "Rol";
-			this.rolDataGridViewTextBoxColumn.Name = "rolDataGridViewTextBoxColumn";
-			this.rolDataGridViewTextBoxColumn.ReadOnly = true;
-			// 
 			// usersBindingSource
 			// 
 			this.usersBindingSource.DataSource = typeof(Data.Users);
@@ -291,6 +263,34 @@
 			this.label6.Size = new System.Drawing.Size(131, 33);
 			this.label6.TabIndex = 5;
 			this.label6.Text = "Usuarios";
+			// 
+			// idDataGridViewTextBoxColumn
+			// 
+			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+			this.idDataGridViewTextBoxColumn.HeaderText = "Clave";
+			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+			this.idDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// nicknameDataGridViewTextBoxColumn
+			// 
+			this.nicknameDataGridViewTextBoxColumn.DataPropertyName = "Nickname";
+			this.nicknameDataGridViewTextBoxColumn.HeaderText = "Nickname";
+			this.nicknameDataGridViewTextBoxColumn.Name = "nicknameDataGridViewTextBoxColumn";
+			this.nicknameDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// passwordDataGridViewTextBoxColumn
+			// 
+			this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+			this.passwordDataGridViewTextBoxColumn.HeaderText = "Contraseña";
+			this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+			this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// rolDataGridViewTextBoxColumn
+			// 
+			this.rolDataGridViewTextBoxColumn.DataPropertyName = "Rol";
+			this.rolDataGridViewTextBoxColumn.HeaderText = "Rol";
+			this.rolDataGridViewTextBoxColumn.Name = "rolDataGridViewTextBoxColumn";
+			this.rolDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
 			// Crud_Usuario
 			// 
@@ -338,11 +338,11 @@
         private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView Grid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rolDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private System.Windows.Forms.Label label6;
-    }
+		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn nicknameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn rolDataGridViewTextBoxColumn;
+	}
 }

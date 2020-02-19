@@ -144,7 +144,6 @@ namespace Miniproyecto
             catch (Exception ex)
             {
                 MessageBox.Show("Ha ocurrido el siguiente error" +ex.ToString(), "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
             }
         }
     }

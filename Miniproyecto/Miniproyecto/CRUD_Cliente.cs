@@ -128,15 +128,17 @@ namespace Miniproyecto
 
         private void CRUD_Cliente_Load(object sender, EventArgs e)
         {
-            cbCategoria.DataSource = BD.Category.ToList();
+			cbCategoria.DataSource = BD.Category.ToList();
             cbCategoria.ValueMember = "Id";
             cbCategoria.DisplayMember = "Description";
+
             GridLoad();
         }
         void GridLoad()
         {
-            Grid.DataSource = BD.Clients.ToList();
-        }
+			Grid.DataSource = BD.Clients.ToList<Clients>();
+
+		}
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -171,9 +173,14 @@ namespace Miniproyecto
                 txtNombre.Text = clients.Name;
                 txtDireccion.Text = clients.Address;
                 txtRFC.Text = clients.RFC;
-                cbCategoria.SelectedItem = clients.CategoryId;
+                cbCategoria.SelectedValue = clients.CategoryId;
                 txtID.Enabled = false;
             }
         }
-    }
+
+		private void Grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+	}
 }
